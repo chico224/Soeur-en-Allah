@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soeur en Allah - Espace pour femmes musulmanes</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#d4a6c8',secondary:'#a6d4b5'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #faf7f5;
+        }
+        .nav-shadow {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .content-area {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+        }
+        [dir="rtl"] {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+    </style>
+</head>
+<body class="bg-[#faf7f5] text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white nav-shadow z-50">
+        <div class="flex items-center justify-between px-4 py-3">
+            <div class="flex items-center">
+                <h1 class="text-xl font-['Pacifico'] text-primary">Soeur en Allah</h1>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button id="darkModeToggle" class="w-8 h-8 flex items-center justify-center text-gray-600">
+                    <i class="ri-sun-line ri-lg"></i>
+                </button>
+                <button id="loginButton" class="w-8 h-8 flex items-center justify-center text-gray-600">
+                    <i class="ri-user-line ri-lg"></i>
+                </button>
+                <button id="menuButton" class="w-8 h-8 flex items-center justify-center text-gray-600">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden bg-white px-4 py-2 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Accueil</a>
+                <a href="#journal" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Mon Journal</a>
+                <a href="#confession" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Espace Confession</a>
+                <a href="#mentorat" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Questions aux Savantes</a>
+                <a href="#coran" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Coran</a>
+                <a href="#objectifs" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Mes Objectifs</a>
+                <a href="#bibliotheque" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Bibliothèque</a>
+                <a href="#calendrier" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Calendrier</a>
+                <a href="#blog" class="py-2 px-3 rounded-button hover:bg-gray-100 text-gray-700">Articles</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-area px-4 sm:px-6 md:px-8 lg:px-12">
+        <!-- Home Section -->
+        <section id="home" class="px-4 py-6">
+            <!-- Banner -->
+            <div class="relative rounded-lg overflow-hidden mb-8">
+                <img src="https://readdy.ai/api/search-image?query=A%20serene%20and%20peaceful%20scene%20with%20soft%20pastel%20colors%20%28pink%2C%20beige%2C%20mint%20green%29%2C%20showing%20a%20beautiful%20garden%20with%20flowers%2C%20a%20small%20fountain%2C%20and%20a%20comfortable%20seating%20area.%20The%20scene%20should%20have%20a%20feminine%20and%20calming%20aesthetic%2C%20with%20soft%20lighting%20and%20a%20sense%20of%20tranquility.%20No%20people%20should%20be%20visible.&width=800&height=400&seq=1&orientation=landscape" alt="Bannière d'accueil" class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/70 to-transparent flex flex-col justify-center p-6">
+                    <h2 class="text-white text-2xl font-semibold mb-2">Bienvenue sur Soeur en Allah</h2>
+                    <p class="text-white text-sm max-w-[200px]">Votre espace sécurisé pour la spiritualité, le partage et la connaissance</p>
+                </div>
+            </div>
+
+            <!-- Quick Access -->
+            <div class="grid grid-cols-2 gap-4 mb-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                <a href="#journal" class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+                    <div class="w-12 h-12 flex items-center justify-center mb-2 bg-primary/10 rounded-full">
+                        <i class="ri-book-line ri-lg text-primary"></i>
+                    </div>
+                    <span class="text-sm font-medium text-center">Mon Journal</span>
+                </a>
+                <a href="#confession" class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+                    <div class="w-12 h-12 flex items-center justify-center mb-2 bg-primary/10 rounded-full">
+                        <i class="ri-chat-heart-line ri-lg text-primary"></i>
+                    </div>
+                    <span class="text-sm font-medium text-center">Confession</span>
+                </a>
+                <a href="#coran" class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+                    <div class="w-12 h-12 flex items-center justify-center mb-2 bg-primary/10 rounded-full">
+                        <i class="ri-book-open-line ri-lg text-primary"></i>
+                    </div>
+                    <span class="text-sm font-medium text-center">Coran</span>
+                </a>
+                <a href="#objectifs" class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center">
+                    <div class="w-12 h-12 flex items-center justify-center mb-2 bg-primary/10 rounded-full">
+                        <i class="ri-medal-line ri-lg text-primary"></i>
+                    </div>
+                    <span class="text-sm font-medium text-center">Objectifs</span>
+                </a>
+            </div>
+
+            <!-- Prayer Times & Calendar -->
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-semibold">16 Avril 2025</h3>
+                    <span class="text-sm text-gray-600">26 Ramadan 1446</span>
+                </div>
+                <div class="grid grid-cols-5 gap-2 mb-4">
+                    <div class="text-center">
+                        <p class="text-xs text-gray-600">Fajr</p>
+                        <p class="text-sm font-medium">04:32</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-600">Dhuhr</p>
+                        <p class="text-sm font-medium">13:15</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-600">Asr</p>
+                        <p class="text-sm font-medium">16:45</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-600">Maghrib</p>
+                        <p class="text-sm font-medium">20:32</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-600">Isha</p>
+                        <p class="text-sm font-medium">22:05</p>
+                    </div>
+                </div>
+                <div class="text-center mb-3">
+                    <p class="text-xs text-gray-600">Prochaine prière: <span class="font-medium">Asr dans 2h 15min</span></p>
+                </div>
+                <!-- Nouveau: Boutons de rappel -->
+                <div class="grid grid-cols-2 gap-2">
+                    <button class="bg-secondary/10 text-secondary py-2 px-3 rounded-button text-sm flex items-center justify-center">
+                        <i class="ri-notification-3-line ri-sm mr-1"></i> Rappel 10 min avant
+                    </button>
+                    <button class="bg-primary/10 text-primary py-2 px-3 rounded-button text-sm flex items-center justify-center">
+                        <i class="ri-alarm-warning-line ri-sm mr-1"></i> Rappel maintenant
+                    </button>
+                </div>
+            </div>
+
+            <!-- Featured Articles -->
+            <div class="mb-6">
+                <h3 class="font-semibold mb-4">Articles récents</h3>
+                <div class="bg-white rounded-lg shadow-sm p-4 mb-4">
+                    <h4 class="font-medium mb-2">Comment trouver la paix intérieure pendant Ramadan</h4>
+                    <p class="text-sm text-gray-600 mb-3">Découvrez des pratiques spirituelles pour cultiver la sérénité pendant ce mois sacré...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">15 Avril 2025</span>
+                        <a href="#" class="text-primary text-sm font-medium">Lire plus</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-4">
+                    <h4 class="font-medium mb-2">La patience: un trésor inestimable</h4>
+                    <p class="text-sm text-gray-600 mb-3">Explorez comment la patience peut transformer votre vie spirituelle et quotidienne...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">12 Avril 2025</span>
+                        <a href="#" class="text-primary text-sm font-medium">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal Section -->
+        <section id="journal" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Mon Journal Spirituel</h2>
+            
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-medium">Aujourd'hui</h3>
+                    <span class="text-sm text-gray-600">16 Avril 2025</span>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                            <i class="ri-pen-nib-line text-primary"></i>
+                        </div>
+                        <h4 class="font-medium">Comment vous sentez-vous aujourd'hui ?</h4>
+                    </div>
+                    <textarea class="w-full border border-gray-200 rounded-lg p-3 text-sm mb-3 h-32" placeholder="Écrivez vos pensées, réflexions spirituelles ou objectifs pour aujourd'hui..."></textarea>
+                    <div class="flex justify-end">
+                        <button class="bg-primary text-white py-2 px-4 rounded-button">Enregistrer</button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-4 gap-2 mb-4">
+                    <button class="bg-white border border-gray-200 rounded-lg p-2 flex flex-col items-center">
+                        <i class="ri-checkbox-circle-line ri-lg text-secondary mb-1"></i>
+                        <span class="text-xs">Prière</span>
+                    </button>
+                    <button class="bg-white border border-gray-200 rounded-lg p-2 flex flex-col items-center">
+                        <i class="ri-book-read-line ri-lg text-primary mb-1"></i>
+                        <span class="text-xs">Coran</span>
+                    </button>
+                    <button class="bg-white border border-gray-200 rounded-lg p-2 flex flex-col items-center">
+                        <i class="ri-heart-line ri-lg text-red-400 mb-1"></i>
+                        <span class="text-xs">Charité</span>
+                    </button>
+                    <button class="bg-white border border-gray-200 rounded-lg p-2 flex flex-col items-center">
+                        <i class="ri-medal-line ri-lg text-yellow-500 mb-1"></i>
+                        <span class="text-xs">Objectifs</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium mb-3">Historique</h3>
+                <div class="space-y-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-3">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium">15 Avril 2025</span>
+                            <div class="flex space-x-1">
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">5/5 prières</span>
+                                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">2 pages</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">Aujourd'hui, j'ai ressenti une grande paix en faisant mes prières à l'heure. J'ai lu une page du Coran le matin et une le soir. Demain, je vais essayer de faire la charité...</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-3">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium">14 Avril 2025</span>
+                            <div class="flex space-x-1">
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">4/5 prières</span>
+                                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">1 page</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 line-clamp-2">Journée difficile mais j'ai réussi à maintenir mes prières. J'ai besoin de plus de concentration pendant la lecture du Coran...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Confession Space Section -->
+        <section id="confession" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Espace Confession</h2>
+            <p class="text-sm text-gray-600 mb-6">Un lieu sécurisé pour partager vos pensées et recevoir du soutien en toute confidentialité.</p>
+            
+            <!-- Login/Anonymous Access -->
+            <div class="bg-primary/5 rounded-lg p-4 mb-6">
+                <p class="text-sm mb-4">Vous pouvez participer de manière totalement anonyme. Aucune information personnelle n'est collectée.</p>
+                <button class="bg-primary text-white py-2 px-4 rounded-button w-full !rounded-button">Accéder en mode anonyme</button>
+            </div>
+            
+            <!-- Categories -->
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Catégories de discussion</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <a href="#" class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm">
+                        <div class="w-10 h-10 mx-auto flex items-center justify-center mb-2">
+                            <i class="ri-heart-line ri-lg text-primary"></i>
+                        </div>
+                        <span class="text-sm">Relations</span>
+                    </a>
+                    <a href="#" class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm">
+                        <div class="w-10 h-10 mx-auto flex items-center justify-center mb-2">
+                            <i class="ri-mental-health-line ri-lg text-primary"></i>
+                        </div>
+                        <span class="text-sm">Bien-être</span>
+                    </a>
+                    <a href="#" class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm">
+                        <div class="w-10 h-10 mx-auto flex items-center justify-center mb-2">
+                            <i class="ri-parent-line ri-lg text-primary"></i>
+                        </div>
+                        <span class="text-sm">Famille</span>
+                    </a>
+                    <a href="#" class="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm">
+                        <div class="w-10 h-10 mx-auto flex items-center justify-center mb-2">
+                            <i class="ri-pray-line ri-lg text-primary"></i>
+                        </div>
+                        <span class="text-sm">Spiritualité</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Chat Preview -->
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Discussions récentes</h3>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <div class="border-b border-gray-100 p-3">
+                        <div class="flex items-start mb-2">
+                            <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 flex-shrink-0">
+                                <span class="text-xs font-medium text-primary">A</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-sm font-medium mr-2">Anonyme_7842</span>
+                                    <span class="text-xs text-gray-500">Aujourd'hui, 10:23</span>
+                                </div>
+                                <p class="text-sm text-gray-700">J'ai du mal à trouver l'équilibre entre mes études et ma pratique religieuse. Comment faites-vous?</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start ml-10">
+                            <div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 flex-shrink-0">
+                                <span class="text-xs font-medium text-secondary">B</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-sm font-medium mr-2">Anonyme_3519</span>
+                                    <span class="text-xs text-gray-500">Aujourd'hui, 10:45</span>
+                                </div>
+                                <p class="text-sm text-gray-700">J'essaie de planifier mes journées à l'avance et de réserver des moments dédiés à la prière...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-start mb-2">
+                            <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 flex-shrink-0">
+                                <span class="text-xs font-medium text-primary">C</span>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <span class="text-sm font-medium mr-2">Anonyme_6201</span>
+                                    <span class="text-xs text-gray-500">Hier, 18:05</span>
+                                </div>
+                                <p class="text-sm text-gray-700">Comment gérer les commentaires négatifs sur le port du hijab au travail?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="mt-4 text-primary text-sm font-medium w-full text-center">Voir toutes les discussions</button>
+            </div>
+            
+            <!-- Start New Discussion -->
+            <div class="bg-primary/5 rounded-lg p-4">
+                <h3 class="font-medium text-sm mb-3">Commencer une nouvelle discussion</h3>
+                <textarea class="w-full border border-gray-200 rounded-lg p-3 text-sm mb-3" rows="3" placeholder="Partagez vos pensées ici..."></textarea>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center text-xs text-gray-600">
+                        <i class="ri-shield-check-line ri-sm mr-1"></i>
+                        <span>100% anonyme</span>
+                    </div>
+                    <button class="bg-primary text-white py-2 px-4 rounded-button !rounded-button">Publier</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentorat Section -->
+        <section id="mentorat" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Questions aux Savantes</h2>
+            <p class="text-sm text-gray-600 mb-6">Posez vos questions religieuses à nos savantes certifiées et recevez des réponses authentiques.</p>
+            
+            <div class="bg-primary/5 rounded-lg p-4 mb-6">
+                <div class="f=""lex items-start mb-3">
+                    <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3 flex-shrink-0">
+                        <i class="ri-user-star-line ri-xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium mb-1">Umm Aisha, Savante en Fiqh</h3>
+                        <p class="text-xs text-gray-600">Spécialiste en jurisprudence islamique - Diplômée de l'Université Islamique de Médine</p>
+                    </div>
+                </div>
+                <p class="text-sm mb-4">Nos savantes répondent sous 24-48h. Toutes les réponses sont vérifiées avec des sources authentiques.</p>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Poser une question</h3>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <select class="w-full border border-gray-200 rounded-lg p-3 text-sm mb-3">
+                        <option value="">Sélectionner une catégorie</option>
+                        <option value="aqida">Croyance (Aqida)</option>
+                        <option value="fiqh">Jurisprudence (Fiqh)</option>
+                        <option value="family">Vie familiale</option>
+                        <option value="tajwid">Récitation du Coran</option>
+                    </select>
+                    <textarea class="w-full border border-gray-200 rounded-lg p-3 text-sm mb-3" rows="4" placeholder="Écrivez votre question en détail..."></textarea>
+                    <div class="flex items-center text-xs text-gray-600 mb-3">
+                        <i class="ri-information-line ri-sm mr-1"></i>
+                        <span>Votre question sera publiée anonymement</span>
+                    </div>
+                    <button class="bg-primary text-white py-3 px-4 rounded-button w-full">Envoyer la question</button>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Questions récentes</h3>
+                <div class="space-y-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Fiqh</span>
+                            <span class="text-xs text-gray-500">15 Avril</span>
+                        </div>
+                        <h4 class="font-medium text-sm mb-2">Est-il permis de reporter une prière pour cause de voyage ?</h4>
+                        <button class="text-primary text-xs font-medium">Voir la réponse</button>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-xs bg-green-500/10 text-green-800 px-2 py-1 rounded-full">Répondu</span>
+                            <span class="text-xs text-gray-500">14 Avril</span>
+                        </div>
+                        <h4 class="font-medium text-sm mb-1">Comment gérer les disputes conjugales selon l'Islam ?</h4>
+                        <p class="text-xs text-gray-600 mb-2 line-clamp-1">Réponse: L'Islam encourage la réconciliation et la patience dans le mariage...</p>
+                        <button class="text-primary text-xs font-medium">Lire la réponse complète</button>
+                    </div>
+                </div>
+                <button class="mt-4 text-primary text-sm font-medium w-full text-center">Voir toutes les questions</button>
+            </div>
+        </section>
+
+        <!-- Quran Section -->
+        <section id="coran" class="px-4 py-6 hidden">
+            <h2 class="text-xl font-semibold mb-4">Le Saint Coran</h2>
+            <p class="text-sm text-gray-600 mb-6">Explorez le Coran avec traduction en français et audio.</p>
+            
+            <!-- Search & Filter -->
+            <div class="flex mb-6">
+                <div class="relative flex-1">
+                    <input type="text" placeholder="Rechercher une sourate..." class="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-l-lg">
+                    <i class="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+                <button class="bg-primary text-white py-2 px-4 rounded-r-lg flex items-center justify-center">
+                    <i class="ri-filter-3-line"></i>
+                </button>
+            </div>
+            
+            <!-- Surah List -->
+            <div class="bg-white rounded-lg shadow-sm mb-6">
+                <div class="p-4 border-b border-gray-100">
+                    <h3 class="font-medium">Sourates récentes</h3>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <a href="#" class="block p-4 hover:bg-gray-50">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <span class="text-xs font-medium">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Al-Fatiha</h4>
+                                    <p class="text-xs text-gray-600">L'Ouverture • 7 versets</p>
+                                </div>
+                            </div>
+                            <i class="ri-play-circle-line ri-lg text-primary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="block p-4 hover:bg-gray-50">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <span class="text-xs font-medium">36</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Ya-Sin</h4>
+                                    <p class="text-xs text-gray-600">Ya-Sin • 83 versets</p>
+                                </div>
+                            </div>
+                            <i class="ri-play-circle-line ri-lg text-primary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="block p-4 hover:bg-gray-50">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <span class="text-xs font-medium">67</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Al-Mulk</h4>
+                                    <p class="text-xs text-gray-600">La Royauté • 30 versets</p>
+                                </div>
+                            </div>
+                            <i class="ri-play-circle-line ri-lg text-primary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="block p-4 hover:bg-gray-50">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <span class="text-xs font-medium">112</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Al-Ikhlas</h4>
+                                    <p class="text-xs text-gray-600">Le Monothéisme pur • 4 versets</p>
+                                </div>
+                            </div>
+                            <i class="ri-play-circle-line ri-lg text-primary"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-4 border-t border-gray-100 text-center">
+                    <a href="#" class="text-primary text-sm font-medium">Voir toutes les sourates</a>
+                </div>
+            </div>
+            
+            <!-- Quran Reader Preview -->
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-medium">Al-Fatiha (L'Ouverture)</h3>
+                    <div class="flex space-x-2">
+                        <button class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-bookmark-line text-gray-600"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-share-line text-gray-600"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mb-4">
+                    <div class="flex space-x-4 items-center">
+                        <button class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-skip-back-line text-gray-600"></i>
+                        </button>
+                        <button class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white">
+                            <i class="ri-play-fill ri-lg"></i>
+                        </button>
+                        <button class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-skip-forward-line text-gray-600"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="text-right mb-2">
+                        <p class="text-lg leading-loose" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux.</p>
+                    </div>
+                    
+                    <div class="text-right mb-2">
+                        <p class="text-lg leading-loose" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">Louange à Allah, Seigneur de l'univers.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <button class="text-primary text-sm font-medium">Voir la sourate complète</button>
+                </div>
+            </div>
+            
+            <!-- Tafsir Preview -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <h3 class="font-medium mb-3">Tafsir (Explication)</h3>
+                <div class="mb-4">
+                    <h4 class="text-sm font-medium mb-2">Ibn Kathir</h4>
+                    <p class="text-sm text-gray-700">Al-Fatiha contient les principes fondamentaux mentionnés en détail dans le Coran. Elle parle de la louange d'Allah, de la façon de L'adorer, de la demande de guidage vers le droit chemin...</p>
+                </div>
+                <button class="text-primary text-sm font-medium">Lire plus</button>
+            </div>
+        </section>
+
+        <!-- Objectifs Section -->
+        <section id="objectifs" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Mes Objectifs Spirituels</h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 relative">
+                        <svg class="w-full h-full" viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e6e6e6" stroke-width="3"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#a6d4b5" stroke-width="3" stroke-dasharray="70, 100"/>
+                            <text x="18" y="20.5" text-anchor="middle" font-size="10" fill="#4b5563">70%</text>
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-sm mb-1">Mémorisation</h3>
+                    <p class="text-xs text-gray-600">3/5 sourates ce mois</p>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 relative">
+                        <svg class="w-full h-full" viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e6e6e6" stroke-width="3"/>
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#d4a6c8" stroke-width="3" stroke-dasharray="90, 100"/>
+                            <text x="18" y="20.5" text-anchor="middle" font-size="10" fill="#4b5563">90%</text>
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-sm mb-1">Prière</h3>
+                    <p class="text-xs text-gray-600">27/30 jours ce mois</p>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Définir un nouvel objectif</h3>
+                <div class="bg-white border border-gray-200 rounded-lg p-4">
+                    <select class="w-full border border-gray-200 rounded-lg p-3 text-sm mb-3">
+                        <option value="">Type d'objectif</option>
+                        <option value="prayer">Prière</option>
+                        <option value="quran">Lecture du Coran</option>
+                        <option value="memorization">Mémorisation</option>
+                        <option value="charity">Charité</option>
+                        <option value="fasting">Jeûne</option>
+                    </select>
+
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-3">
+                        <div>
+                            <label class="text-xs text-gray-600 block mb-1">Fréquence</label>
+                            <select class="w-full border border-gray-200 rounded-lg p-2 text-sm">
+                                <option>Quotidien</option>
+                                <option>Hebdomadaire</option>
+                                <option>Mensuel</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-600 block mb-1">Cible</label>
+                            <input type="number" class="w-full border border-gray-200 rounded-lg p-2 text-sm" placeholder="Ex: 5">
+                        </div>
+                    </div>
+                    
+                    <label class="text-xs text-gray-600 block mb-1">Date de fin (optionnel)</label>
+                    <input type="date" class="w-full border border-gray-200 rounded-lg p-2 text-sm mb-3">
+                    
+                    <button class="bg-primary text-white py-2 px-4 rounded-button w-full">Créer l'objectif</button>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="font-medium text-sm mb-3">Mes objectifs en cours</h3>
+                <div class="space-y-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-2">
+                                    <i class="ri-book-open-line text-primary ri-sm"></i>
+                                </div>
+                                <h4 class="font-medium text-sm">Lire tout le Coran</h4>
+                            </div>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">35%</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-600 mb-2">
+                            <span>12/30 juz terminés</span>
+                            <span>Fin: 30 juin</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center mr-2">
+                                    <i class="ri-medal-line text-secondary ri-sm"></i>
+                                </div>
+                                <h4 class="font-medium text-sm">Jeûne des 6 jours de Shawwal</h4>
+                            </div>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">4/6</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-600 mb-2">
+                            <span>4 jours complétés</span>
+                            <span>Fin: 15 mai</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 66%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Library Section -->
+        <section id="bibliotheque" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Bibliothèque Islamique</h2>
+            <p class="text-sm text-gray-600 mb-6">Accédez à une collection de livres islamiques essentiels.</p>
+            
+            <!-- Search -->
+            <div class="relative mb-6">
+                <input type="text" placeholder="Rechercher un livre..." class="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg">
+                <i class="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            
+            <!-- Categories -->
+            <div class="mb-6 overflow-x-auto">
+                <div class="flex space-x-2 pb-2">
+                    <button class="whitespace-nowrap bg-primary text-white px-4 py-2 rounded-full text-sm">Tous</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Spiritualité</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Jurisprudence</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Biographie</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Hadith</button>
+                </div>
+            </div>
+            
+            <!-- Featured Books -->
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Livres populaires</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                        <div class="h-32 bg-gray-100 flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=Islamic%20book%20cover%20with%20elegant%20calligraphy%2C%20minimalist%20design%2C%20soft%20colors%2C%20professional%20book%20cover&width=150&height=200&seq=2&orientation=portrait" alt="La Citadelle du Musulman" class="h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-medium text-sm mb-1">La Citadelle du Musulman</h4>
+                            <p class="text-xs text-gray-600 mb-2">Said Al-Qahtani</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Invocations</span>
+                                <button class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">
+                                    <i class="ri-download-line text-gray-600 ri-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                        <div class="h-32 bg-gray-100 flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=Islamic%20book%20cover%20with%20elegant%20calligraphy%2C%20minimalist%20design%2C%20soft%20colors%2C%20professional%20book%20cover%20with%20green%20tones&width=150&height=200&seq=3&orientation=portrait" alt="Riyad as-Salihin" class="h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-medium text-sm mb-1">Riyad as-Salihin</h4>
+                            <p class="text-xs text-gray-600 mb-2">Imam An-Nawawi</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Hadith</span>
+                                <button class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">
+                                    <i class="ri-download-line text-gray-600 ri-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Book List -->
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Tous les livres</h3>
+                <div class="space-y-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-3 flex">
+                        <div class="w-16 h-20 bg-gray-100 flex-shrink-0 mr-3 flex items-center justify-center overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Islamic%20book%20cover%20with%20elegant%20calligraphy%2C%20minimalist%20design%2C%20soft%20colors%2C%20professional%20book%20cover%20with%20blue%20tones&width=100&height=150&seq=4&orientation=portrait" alt="Le Nectar Cacheté" class="h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium text-sm mb-1">Le Nectar Cacheté</h4>
+                            <p class="text-xs text-gray-600 mb-2">Safi-ur-Rahman Al-Mubarakpuri</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Biographie</span>
+                                <button class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">
+                                    <i class="ri-download-line text-gray-600 ri-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg p-3 flex">
+                        <div class="w-16 h-20 bg-gray-100 flex-shrink-0 mr-3 flex items-center justify-center overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Islamic%20book%20cover%20with%20elegant%20calligraphy%2C%20minimalist%20design%2C%20soft%20colors%2C%20professional%20book%20cover%20with%20purple%20tones&width=100&height=150&seq=5&orientation=portrait" alt="La Voie du Musulman" class="h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-medium text-sm mb-1">La Voie du Musulman</h4>
+                            <p class="text-xs text-gray-600 mb-2">Abu Bakr Djaber Al-Djazaïri</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Jurisprudence</span>
+                                <button class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">
+                                    <i class="ri-download-line text-gray-600 ri-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="mt-4 text-primary text-sm font-medium w-full text-center">Voir tous les livres</button>
+            </div>
+        </section>
+
+        <!-- Calendrier Section -->
+        <section id="calendrier" class="px-4 py-6 bg-white hidden">
+            <h2 class="text-xl font-semibold mb-4">Calendrier Islamique</h2>
+            
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-semibold">Ramadan 1446</h3>
+                    <div class="flex space-x-2">
+                        <button class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-arrow-left-s-line text-gray-600"></i>
+                        </button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100">
+                            <i class="ri-arrow-right-s-line text-gray-600"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-7 gap-1 text-center text-xs mb-2">
+                    <div class="font-medium">Lun</div>
+                    <div class="font-medium">Mar</div>
+                    <div class="font-medium">Mer</div>
+                    <div class="font-medium">Jeu</div>
+                    <div class="font-medium">Ven</div>
+                    <div class="font-medium">Sam</div>
+                    <div class="font-medium">Dim</div>
+                </div>
+                
+                <div class="grid grid-cols-7 gap-1">
+                    <!-- Exemple de semaine -->
+                    <div class="aspect-square flex items-center justify-center text-xs text-gray-400">30</div>
+                    <div class="aspect-square flex items-center justify-center text-xs text-gray-400">31</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">1</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">2</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">3</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">4</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">5</div>
+                    
+                    <!-- 2ème ligne -->
+                    <div class="aspect-square flex items-center justify-center text-xs">6</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">7</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">8</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">9</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">10</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">11</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">12</div>
+                    
+                    <!-- 3ème ligne -->
+                    <div class="aspect-square flex items-center justify-center text-xs">13</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">14</div>
+                    <div class="aspect-square flex items-center justify-center text-xs bg-primary/10 rounded-full font-medium">15</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">16</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">17</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">18</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">19</div>
+                    
+                    <!-- 4ème ligne -->
+                    <div class="aspect-square flex items-center justify-center text-xs">20</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">21</div>
+                    <div class="aspect-square flex items-center justify-center text-xs bg-primary/10 rounded-full font-medium">22</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">23</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">24</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">25</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">26</div>
+                    
+                    <!-- 5ème ligne -->
+                    <div class="aspect-square flex items-center justify-center text-xs bg-primary/10 rounded-full font-medium">27</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">28</div>
+                    <div class="aspect-square flex items-center justify-center text-xs">29</div>
+                    <div class="aspect-square flex items-center justify-center text-xs bg-primary text-white rounded-full font-medium">30</div>
+                    <div class="aspect-square flex items-center justify-center text-xs text-gray-400">1</div>
+                    <div class="aspect-square flex items-center justify-center text-xs text-gray-400">2</div>
+                    <div class="aspect-square flex items-center justify-center text-xs text-gray-400">3</div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-sm mb-3">Événements ce mois</h3>
+                <div class="space-y-3">
+                    <div class="bg-white border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-sm font-medium text-primary">15</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-sm">Nuit du Destin</h4>
+                                <p class="text-xs text-gray-600">Laylat al-Qadr - Nuit meilleure que 1000 mois</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3 flex-shrink-0">
+                                <span class="text-sm font-medium text-primary">30</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-sm">Aïd al-Fitr</h4>
+                                <p class="text-xs text-gray-600">Fête de rupture du jeûne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="font-medium text-sm mb-3">Prochains événements</h3>
+                <div class="bg-white border border-gray-200 rounded-lg p-3">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mr-3 flex-shrink-0">
+                            <span class="text-sm font-medium text-secondary">15</span>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-sm">Shawwal 1446</h4>
+                            <p class="text-xs text-gray-600">Jeûne des 6 jours de Shawwal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="px-4 py-6 hidden">
+            <h2 class="text-xl font-semibold mb-4">Articles & Inspiration</h2>
+            <p class="text-sm text-gray-600 mb-6">Découvrez des articles inspirants et des conseils spirituels.</p>
+            
+            <!-- Featured Article -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+                <img src="https://readdy.ai/api/search-image?query=A%20serene%20and%20peaceful%20scene%20showing%20a%20woman%20in%20hijab%20from%20behind%2C%20looking%20at%20a%20beautiful%20sunset%20over%20a%20calm%20lake%20or%20ocean.%20The%20image%20should%20have%20soft%2C%20warm%20lighting%20and%20convey%20a%20sense%20of%20peace%20and%20contemplation.&width=800&height=400&seq=7&orientation=landscape" alt="Article à la une" class="w-full h-40 sm:h-52 md:h-64 lg:h-80 object-cover">
+                <div class="p-4">
+                    <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full mb-2 inline-block">Spiritualité</span>
+                    <h3 class="font-medium mb-2">Trouver la paix intérieure dans un monde agité</h3>
+                    <p class="text-sm text-gray-600 mb-3">Découvrez comment cultiver la sérénité et la paix intérieure grâce à des pratiques spirituelles quotidiennes...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">15 Avril 2025</span>
+                        <a href="#" class="text-primary text-sm font-medium">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article Categories -->
+            <div class="mb-6 overflow-x-auto">
+                <div class="flex space-x-2 pb-2">
+                    <button class="whitespace-nowrap bg-primary text-white px-4 py-2 rounded-full text-sm">Tous</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Spiritualité</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Bien-être</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Témoignages</button>
+                    <button class="whitespace-nowrap bg-white border border-gray-200 px-4 py-2 rounded-full text-sm">Conseils</button>
+                </div>
+            </div>
+            
+            <!-- Article List -->
+            <div class="space-y-4 mb-6">
+                <div class="bg-white rounded-lg shadow-sm p-4 flex">
+                    <div class="w-20 h-20 bg-gray-100 flex-shrink-0 mr-3 rounded overflow-hidden sm:w-24 sm:h-24 md:w-32 md:h-32">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20hands%20holding%20prayer%20beads%20%28tasbih%29%20with%20soft%20natural%20lighting%2C%20minimalist%20composition&width=100&height=100&seq=8&orientation=squarish" alt="Article" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full mb-1 inline-block">Pratique</span>
+                        <h4 class="font-medium text-sm mb-1">L'importance du dhikr quotidien</h4>
+                        <p class="text-xs text-gray-600 mb-2 line-clamp-2">Comment l'évocation d'Allah peut transformer votre quotidien et apporter sérénité...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">12 Avril 2025</span>
+                            <a href="#" class="text-primary text-xs font-medium">Lire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-4 flex">
+                    <div class="w-20 h-20 bg-gray-100 flex-shrink-0 mr-3 rounded overflow-hidden sm:w-24 sm:h-24 md:w-32 md:h-32">
+                        <img src="https://readdy.ai/api/search-image?query=A%20modern%20minimalist%20workspace%20with%20a%20notebook%2C%20pen%2C%20and%20a%20cup%20of%20tea%2C%20with%20soft%20natural%20lighting&width=100&height=100&seq=9&orientation=squarish" alt="Article" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full mb-1 inline-block">Bien-être</span>
+                        <h4 class="font-medium text-sm mb-1">Concilier vie professionnelle et spiritualité</h4>
+                        <p class="text-xs text-gray-600 mb-2 line-clamp-2">Des conseils pratiques pour intégrer votre foi dans votre vie professionnelle...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">10 Avril 2025</span>
+                            <a href="#" class="text-primary text-xs font-medium">Lire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="text-primary text-sm font-medium w-full text-center">Voir tous les articles</button>
+        </section>
+    </main>
+
+    <!-- Tab Bar -->
+    <div class="fixed bottom-0 w-full bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.05)] z-50">
+        <div class="grid grid-cols-5 h-16">
+            <a href="#home" class="flex flex-col items-center justify-center">
+                <i class="ri-home-5-line ri-lg text-primary"></i>
+                <span class="text-xs mt-1 text-primary">Accueil</span>
+            </a>
+            <a href="#journal" class="flex flex-col items-center justify-center">
+                <i class="ri-book-line ri-lg text-gray-500"></i>
+                <span class="text-xs mt-1 text-gray-500">Journal</span>
+            </a>
+            <a href="#coran" class="flex flex-col items-center justify-center">
+                <i class="ri-book-open-line ri-lg text-gray-500"></i>
+                <span class="text-xs mt-1 text-gray-500">Coran</span>
+            </a>
+            <a href="#objectifs" class="flex flex-col items-center justify-center">
+                <i class="ri-medal-line ri-lg text-gray-500"></i>
+                <span class="text-xs mt-1 text-gray-500">Objectifs</span>
+            </a>
+            <a href="#blog" class="flex flex-col items-center justify-center">
+                <i class="ri-article-line ri-lg text-gray-500"></i>
+                <span class="text-xs mt-1 text-gray-500">Articles</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg w-[90%] max-w-sm p-5">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-semibold">Connexion</h3>
+                <button id="closeLoginModal" class="w-8 h-8 flex items-center justify-center text-gray-500">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">Connectez-vous de manière anonyme pour participer aux discussions.</p>
+            <button class="bg-primary text-white py-3 px-4 rounded-button w-full mb-3 !rounded-button">Connexion anonyme</button>
+            <p class="text-xs text-gray-500 text-center">Aucune information personnelle n'est collectée.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Login Modal
+            const loginButton = document.getElementById('loginButton');
+            const loginModal = document.getElementById('loginModal');
+            const closeLoginModal = document.getElementById('closeLoginModal');
+            
+            loginButton.addEventListener('click', function() {
+                loginModal.classList.remove('hidden');
+            });
+            
+            closeLoginModal.addEventListener('click', function() {
+                loginModal.classList.add('hidden');
+            });
+            
+            // Close modal when clicking outside
+            loginModal.addEventListener('click', function(e) {
+                if (e.target === loginModal) {
+                    loginModal.classList.add('hidden');
+                }
+            });
+            
+            // Navigation between sections
+            function showSection(sectionId) {
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.add('hidden');
+                });
+                
+                // Show selected section
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.classList.remove('hidden');
+                }
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            }
+            
+            // Tab Bar Navigation
+            const tabLinks = document.querySelectorAll('.fixed.bottom-0 a, #mobileMenu a');
+            
+            tabLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('href').substring(1);
+                    showSection(target);
+                    
+                    // Update active tab styling
+                    tabLinks.forEach(tab => {
+                        const icon = tab.querySelector('i');
+                        const text = tab.querySelector('span');
+                        if (icon && text) {
+                            icon.classList.remove('text-primary');
+                            icon.classList.add('text-gray-500');
+                            text.classList.remove('text-primary');
+                            text.classList.add('text-gray-500');
+                        }
+                    });
+                    
+                    // Add active class to clicked tab
+                    const icon = this.querySelector('i');
+                    const text = this.querySelector('span');
+                    if (icon && text) {
+                        icon.classList.remove('text-gray-500');
+                        icon.classList.add('text-primary');
+                        text.classList.remove('text-gray-500');
+                        text.classList.add('text-primary');
+                    }
+                });
+            });
+            
+            // Dark Mode Toggle
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const darkModeIcon = darkModeToggle.querySelector('i');
+            
+            darkModeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark');
+                if (darkModeIcon.classList.contains('ri-sun-line')) {
+                    darkModeIcon.classList.remove('ri-sun-line');
+                    darkModeIcon.classList.add('ri-moon-line');
+                } else {
+                    darkModeIcon.classList.remove('ri-moon-line');
+                    darkModeIcon.classList.add('ri-sun-line');
+                }
+            });
+            
+            // Prayer Reminders
+            function setupPrayerReminders() {
+                const prayerTimes = {
+                    fajr: "04:32",
+                    dhuhr: "13:15",
+                    asr: "16:45",
+                    maghrib: "20:32",
+                    isha: "22:05"
+                };
+                
+                // Request notification permission
+                if ('Notification' in window) {
+                    Notification.requestPermission().then(permission => {
+                        if (permission === 'granted') {
+                            console.log('Notification permission granted');
+                        }
+                    });
+                }
+                
+                // Schedule reminders
+                function scheduleReminder(prayerName, time, minutesBefore = 0) {
+                    const [hours, minutes] = time.split(':').map(Number);
+                    const now = new Date();
+                    const prayerTime = new Date();
+                    
+                    prayerTime.setHours(hours, minutes - minutesBefore, 0, 0);
+                    
+                     if (prayerTime < now) {
+                        prayerTime.setDate(prayerTime.getDate() + 1);
+                    }
+                    
+                    const timeout = prayerTime - now;
+                    
+                    setTimeout(() => {
+                        if ('Notification' in window && Notification.permission === 'granted') {
+                            new Notification(`Rappel de prière - ${prayerName}`, {
+                                body: `Il est temps pour la prière ${prayerName}${minutesBefore > 0 ? ` dans ${minutesBefore} minutes` : ''}`,
+                                icon: '/icons/icon-192x192.png'
+                            });
+                        }
+                    }, timeout);
+                }
+                
+                // Schedule all reminders
+                Object.entries(prayerTimes).forEach(([prayer, time]) => {
+                    scheduleReminder(prayer, time, 10); // 10 min before
+                    scheduleReminder(prayer, time); // At exact time
+                });
+            }
+            
+            // Initialize prayer reminders
+            setupPrayerReminders();
+            
+            // Show home section by default
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
