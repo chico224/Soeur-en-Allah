@@ -1,0 +1,10 @@
+v: 0
+micros:
+  - name: soeur-en-allah
+    src: .
+    engine: python3.9
+    run: uvicorn main:app --host 0.0.0.0 --port 8080
+    python_version: 3.9
+    env:
+      - name: PYTHONUNBUFFERED
+        value: "1"
